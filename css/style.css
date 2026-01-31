@@ -27,7 +27,8 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -35,9 +36,7 @@ header {
 }
 
 header .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: static;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -45,6 +44,7 @@ header .logo {
     padding: 5px;
     object-fit: contain;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    align-self: flex-start;
 }
 
 .header-content > div {
@@ -498,13 +498,33 @@ footer li {
         gap: 15px;
     }
 
+    header {
+        padding: 30px 15px;
+        min-height: 360px;
+    }
+
+    header .logo {
+        width: 70px;
+        height: 70px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .header-content > div {
+        text-align: center;
+    }
+
     header h1 {
-        font-size: 1.6em;
+        font-size: 1.4em;
+    }
+
+    .tagline {
+        font-size: 1.05em;
     }
 
     .nav-link {
         padding: 12px 15px;
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     .cta-buttons {
@@ -521,15 +541,42 @@ footer li {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     h3 {
-        font-size: 1.1em;
+        font-size: 1em;
+    }
+
+    p,
+    li {
+        font-size: 0.95em;
+    }
+
+    strong {
+        font-size: 1em;
     }
 
     .card {
         padding: 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer li,
+    .footer-column {
+        text-align: center;
+    }
+
+    #back-to-top {
+        width: 44px;
+        height: 44px;
+        bottom: 16px;
+        right: 16px;
+        font-size: 18px;
     }
 }
 
