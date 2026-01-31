@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương tiện di chuyển – Tà Xùa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div>
+            <h1>Du Lịch Tà Xùa – Tây Bắc</h1>
+            <p class="tagline">Tà Xùa-Chạm mây giữa đại ngàn Tây Bắc</p>
+        </div>
+        <img src="images/logoWeb.png" alt="Logo Tà Xùa" class="logo">
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-link">Vị trí & Văn hóa</a>
+        <a href="dichuyen.html" class="nav-link active">Phương tiện di chuyển</a>
+        <a href="amthuc.html" class="nav-link">Ẩm thực & Du lịch</a>
+    </div>
+</nav>
+
+<main>
+    <section class="section">
+        <h2>Phương tiện di chuyển</h2>
+        
+        <div class="card">
+            <img src="images/phuongtiendichuyen1.jpg" alt="Phương tiện di chuyển đến Tà Xùa" class="section-image">
+            <h3>🚌 Di chuyển từ Hà Nội</h3>
+            <p>
+                Du khách có thể đi xe khách từ Hà Nội đến Bắc Yên, sau đó thuê xe máy hoặc taxi
+                để lên Tà Xùa. Thời gian di chuyển khoảng 6–8 giờ.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="images/phuongtiendichuyen.jpg" alt="Đường đèo núi" class="section-image">
+            <h3>🚗 Di chuyển từ Sơn La</h3>
+            <p>
+                Từ thành phố Sơn La, có thể đi ô tô hoặc xe máy theo đường đèo núi.
+                Nên đi ban ngày để đảm bảo an toàn.
+            </p>
+        </div>
+
+        <div class="card alert">
+            <img src="images/phuongtiendichuyen2.jpg" alt="Lưu ý an toàn" class="section-image">
+            <h3>⚠️ Những lưu ý quan trọng</h3>
+            <ul class="feature-list">
+                <li>Đường đèo nhiều khúc cua, sương mù dày.</li>
+                <li>Nên kiểm tra xe kỹ trước khi đi.</li>
+                <li>Mang theo áo ấm vì thời tiết lạnh.</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h3>Thông tin liên hệ</h3>
+    <div class="footer-content">
+        <div class="footer-column">
+            <ul>
+                <li>• Địa chỉ: Xã Tà Xùa, huyện Bắc Yên, tỉnh Sơn La</li>
+                <li>• Email: taxua.travel@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li>• Số điện thoại: 0123 456 789</li>
+                <li>• Website: www.taxua-tour.vn</li>
+            </ul>
+            <p>(Thông tin mang tính minh họa phục vụ bài học Tin học)</p>
+        </div>
+    </div>
+</footer>
+
+<button id="back-to-top" title="Back to Top">↑</button>
+
+<script>
+    const backToTopButton = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</body>
+</html>
